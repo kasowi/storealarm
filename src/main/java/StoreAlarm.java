@@ -3,6 +3,7 @@ public class StoreAlarm {
 
 
     public static String alarm(int a, String alertLevel) {
+        System.out.println("Hallooo");
         if (a > 30 && alertLevel.equals("gelb")) {
             return "Zu viele Personen";
         }
@@ -12,9 +13,10 @@ public class StoreAlarm {
         if (a > 60 && alertLevel.equals("grün")){
             return "Zu viele Personen";
         }
-
         else {
             return "Maximale Personenzahl nicht überschritten";
+
+
         }
     }
 }
